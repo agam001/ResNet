@@ -12,7 +12,7 @@ def convolutional_block(activation_prev_layer, filter_size, filters_array, strid
     X = Activation('relu')(X)
     
     # Second Conv layer
-    X = Conv2D(filters = f2, kernel_size = (f,f), padding = 'same', strides=(1,1), kernel_initializer = glorot_uniform(seed=1))(X)
+    X = Conv2D(filters = f2, kernel_size = (filter_size,filter_size), padding = 'same', strides=(1,1), kernel_initializer = glorot_uniform(seed=1))(X)
     X = BatchNormalization(axis = 3)(X)
     X = Activation('relu')(X)
     
