@@ -1,7 +1,7 @@
 import numpy as np
 from keras.layers import Conv2D, Activation, BatchNormalization, Add
 
-def identity_block(activation_prev_layer, filter_size, filters_array, stage):
+def identity_block(activation_prev_layer, filter_size, filters_array):
     
     f1, f2, f3 = filters_array
     
